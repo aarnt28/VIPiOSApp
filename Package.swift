@@ -7,22 +7,17 @@ let package = Package(
     products: [
         .library(name: "VIPAPP", targets: ["VIPAPP"])
     ],
-    // Declare external packages here
     dependencies: [
         .package(url: "https://github.com/apple/swift-collections.git", from: "1.0.0")
     ],
     targets: [
         .target(
             name: "VIPAPP",
-            // Targets depend on products from your dependencies
             dependencies: [
-                .product(name: "Collections", package: "swift-collections")
-                // or use a specific module:
-                // .product(name: "OrderedCollections", package: "swift-collections")
+                .product(name: "OrderedCollections", package: "swift-collections")
+                // or .product(name: "Collections", package: "swift-collections")
             ],
-            resources: [
-                .process("Resources") // path is Sources/VIPAPP/Resources
-            ]
+            resources: [.process("Resources")]
         ),
         .testTarget(
             name: "VIPAPPTests",
