@@ -1,0 +1,4 @@
+*.swift text eol=lf
+Package.swift text eol=lf
+*.xcassets -text
+*.png -text
