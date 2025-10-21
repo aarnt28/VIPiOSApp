@@ -108,5 +108,3 @@ private struct TicketRow: View {
         .padding(.vertical, 4)
     }
 }
-
-

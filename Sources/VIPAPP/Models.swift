@@ -34,7 +34,7 @@ struct TicketAttachment: Codable, Identifiable, Equatable {
     let url: String?
 }
 
-// MARK: - IntBool (0/1 ⇄ Bool)
+// MARK: - IntBool (0/1 ? Bool)
 
 @propertyWrapper
 struct IntBool: Codable {
